@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "api": "node ratingsAPI.js"
+    "lint": "standard"
   },
   "dependencies": {
     "axios": "0.16.1",
