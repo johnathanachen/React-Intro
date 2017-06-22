@@ -17,7 +17,8 @@ html {
 }
 
 .logo-search {
-  width: 100px;
+  margin: 5px 0px;
+  width: 150px;
 }
 
 .app {
@@ -184,7 +185,7 @@ header {
   left: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: #000;
   padding: 8px 30px;
 }
 
@@ -225,13 +226,19 @@ header > h2 > a {
   height: 100%;
 }
 
+.input-text {
+  color: #aaa;
+}
+
 header > input {
   min-width: 250px;
   max-width: 350px;
   width: 33%;
   padding: 4px;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  height: 35.5px;
+  outline: none;
+  border-radius: 18px;
 }
 
 .details > section > img, .details > section > h3 {
