@@ -1,18 +1,21 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import MyTitle from './MyTitle'
+import { render } from 'react-dom'
+import { HashRouter, Match } from 'react-router'
+import Landing from './Landing'
+import '../public/normalize.css'
+import '../public/style.css'
 
-var myFirstComponent = React.createClass({
-  render: function () {
+const App = React.createClass({
+  render () {
     return (
-      <div>
-      <MyTitle title='props are cool' color='rebeccapurple'/>
-      <MyTitle title='props are amazing' color='mediumaquarium'/>
-      <MyTitle title='props are wonderful' color='blue'/>
-      </div>
+      <HashRouter>
+        <div className='app'>
+          <Match exactly pattern='/' component={Landing} />
+        </div>
+      </HashRouter>
     )
   }
 })
 
-ReactDOM.render(React.createElement(myFirstComponent), document
-        .getElementById('app'))
+render(<App />, document.getElementById('app'))
+
