@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
   },
   "dependencies": {
     "axios": "0.16.1",
