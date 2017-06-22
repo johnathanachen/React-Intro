@@ -5,9 +5,9 @@ const Landing = React.createClass({
   render () {
     return (
       <div className='landing'>
-        <h1>svideo</h1>
-        <input type='text' placeholder='Search' />
-        <Link to='/search'>or Browse All</Link>
+        <img className='logo' src='../public/img/logo.png' />
+        <input type='text' placeholder='Search movies' />
+        <Link to='/search'>Browse All</Link>
       </div>
     )
   }
