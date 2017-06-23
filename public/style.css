@@ -276,5 +276,6 @@ header > input {
 }
 
 .details > header + section {
-  margin-top: 25px;
+  margin-top: 80px;
+  color: #A9A9A9;
 }
