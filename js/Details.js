@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 const { shape, string } = React.PropTypes
 
 const Details = React.createClass({
@@ -15,9 +16,7 @@ const Details = React.createClass({
         this.props.show
     return (
       <div className='details'>
-        <header>
-          <img className='logo-search' src='../public/img/logo.png' />
-        </header>
+        <Header />
         <section>
           <h1>{title}</h1>
           <h2>({year})</h2>
