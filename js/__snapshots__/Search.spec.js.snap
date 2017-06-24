@@ -4,19 +4,9 @@ exports[`Search snapshot test 1`] = `
 <div
   className="search"
 >
-  <header>
-    <img
-      className="logo-search"
-      src="../public/img/logo.png"
-    />
-    <input
-      className="input-text"
-      onChange={[Function]}
-      placeholder="Search"
-      type="text"
-      value=""
-    />
-  </header>
+  <Connect(Header)
+    showSearch={true}
+  />
   <div>
     <ShowCard
       description="A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him."
